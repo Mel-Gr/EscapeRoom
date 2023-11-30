@@ -1,11 +1,81 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escaperoom</title>
+    <link href="./styles/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <div class="contenedorImagen">
+        <img src="./images/pared1.jpg" id="pared" usemap="#imgmap1">
+
+        <map id="imgmap1" name="imgmap1">
+            <area shape="rect" alt="CuadroMonaLisa" title="" coords="286,207,398,354" onclick="openVentanita('11')" target="" />
+            <area shape="circle" alt="PlantaRojaPared" title="" coords="638,201,41" onclick="openVentanita('10')" target="" />
+            <area shape="rect" alt="Puerta" title="" coords="786,288,1058,569" onclick="intentarAbrir()" target="" />
+            <area shape="rect" alt="Teclado" title="" coords="682,393,733,464" onclick="openTeclado()" target="" />
+        </map>
+
+        <map id="imgmap2" name="imgmap2">
+            <area shape="rect" alt="Chimenea" title="" coords="562,498,712,556" onclick="openVentanitaQ()" target="" />
+            <area shape="rect" alt="Libros" title="" coords="845,419,901,487" onclick="openVentanita('1')" target="" />
+            <area shape="rect" alt="CuadroNoche" title="" coords="235,252,365,354" onclick="openVentanita('14')" target="" />
+            <area shape="circle" alt="Jarron" title="" coords="158,452,25" onclick="openVentanita('5')" target="" />
+            <area shape="circle" alt="OjoOso" title="" coords="1081,374,10" onclick="openVentanitaOso()" target="" />
+        </map>
+
+        <map id="imgmap3" name="imgmap3">
+            <area shape="circle" alt="OjoOso" title="" coords="338,334,9" onclick="openVentanitaOso()" target="" />
+            <area shape="rect" alt="Cuadro" title="" coords="784,166,913,256" onclick="openVentanita('13')"  target="" />
+            <area shape="rect" alt="RepisaVentana" title="" coords="539,435,683,457" onclick="openVentanita('2')" target="" />
+            <area shape="rect" alt="Cortina" title="" coords="717,290,748,420" onclick="openVentanita('6')" target="" />
+            <area shape="circle" alt="PataOso" title="" coords="377,554,48" onclick="openVentanita('7')" target="" />
+            <area shape="rect" alt="Espejo" title="" coords="957,361,1028,561" onclick="openVentanita('8')" target="" />
+        </map>
+
+        <map id="imgmap4" name="imgmap4">
+            <area shape="rect" alt="CuadroVenus" title="" coords="497,168,778,328" onclick="openVentanita('12')" target="" />
+            <area shape="circle" alt="EsquinaCuadro" title="" coords="775,339,10" onclick="openVentanita('3')" target="" />
+            <area shape="rect" alt="Maceta" title="" coords="222,528,287,603" onclick="openVentanita('9')" target="" />
+            <area shape="rect" alt="RajaSofa" title="" coords="543,524,627,541" onclick="openVentanita('4')" target="" />
+        </map>
+    </div>
+    <div id="pagTeclado" style="display: none;">
+        <form id="teclado" action="index.html" method="get">
+            <div>
+                <input type="text" id="inputTexto" >
+                <button type="button" id="cerrar" onclick="cerrarTeclado()">Salir</button>
+            </div>
+            <br>
+            <button type="button" id="n1" onclick="pulsarBoton('n1')" value="1">1</button>
+            <button type="button" id="n2" onclick="pulsarBoton('n2')" value="2">2</button>
+            <button type="button" id="n3" onclick="pulsarBoton('n3')" value="3">3</button>
+            <br>
+            <button type="button" id="n4" onclick="pulsarBoton('n4')" value="4">4</button>
+            <button type="button" id="n5" onclick="pulsarBoton('n5')" value="5">5</button>
+            <button type="button" id="n6" onclick="pulsarBoton('n6')" value="6">6</button>
+            <br>
+            <button type="button" id="n7" onclick="pulsarBoton('n7')" value="7">7</button>
+            <button type="button" id="n8" onclick="pulsarBoton('n8')" value="8">8</button>
+            <button type="button" id="n9" onclick="pulsarBoton('n9')" value="9">9</button>
+            <br>
+            <button type="button" id="ok" onclick="validarCodigo()">OK</button>
+            <button type="button" id="n0" onclick="pulsarBoton('n0')" value="0">0</button>
+            <button type="reset" id="borrar">C</button>
+        </form>
+    </div>
+    <audio id="sonidoVictoria" src="./images/exito.mp3"></audio>
+    <div id="contenedorLBoton">
+        <button type="button" id="lButton" onclick="clickIzq()"> <img src="./images/LeftArrow.png" height="40px"> </button>
+    </div>
+    <div id="contenedorRBoton">
+        <button type="button" id="rButton" onclick="clickDch()"> <img src="./images/RightArrow.png" height="40px"> </button>
+    </div>
+    <script src="./scripts/juego.js"></script>
 </body>
 </html>

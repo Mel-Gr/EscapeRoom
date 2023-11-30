@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclado</title>
+    <link href="./styles/style.css" rel="stylesheet">
+</head>
+<body>
+    <form id="teclado">
+        <div>
+            <input type="text" id="inputTexto" >
+        </div>
+        <br>
+        <button type="button" id="n1" onclick="pulsarBoton('n1')" value="1">1</button>
+        <button type="button" id="n2" onclick="pulsarBoton('n2')" value="2">2</button>
+        <button type="button" id="n3" onclick="pulsarBoton('n3')" value="3">3</button>
+        <br>
+        <button type="button" id="n4" onclick="pulsarBoton('n4')" value="4">4</button>
+        <button type="button" id="n5" onclick="pulsarBoton('n5')" value="5">5</button>
+        <button type="button" id="n6" onclick="pulsarBoton('n6')" value="6">6</button>
+        <br>
+        <button type="button" id="n7" onclick="pulsarBoton('n7')" value="7">7</button>
+        <button type="button" id="n8" onclick="pulsarBoton('n8')" value="8">8</button>
+        <button type="button" id="n9" onclick="pulsarBoton('n9')" value="9">9</button>
+        <br>
+        <button type="submit" id="ok" onclick="validarCodigo()">OK</button>
+        <button type="button" id="n0" onclick="pulsarBoton('n0')" value="0">0</button>
+        <button type="reset" id="borrar">C</button>
+    </form>
+    
+    <script src="./scripts/juego.js"></script>
+</body>
+</html>

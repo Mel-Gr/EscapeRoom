@@ -1,0 +1,149 @@
+.contenedorImagen{
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+#contenedorLBoton{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+}
+#contenedorRBoton{
+    position: absolute;
+    top: 45%;
+    left: 85%;
+}
+#pagTeclado{
+    position: absolute;
+    top: 20%;
+    left: 35%;
+}
+.nota{
+    background-image: url(../images/nota.jpg);
+    background-size: 520px;
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+}
+#notaQuemada{
+    background-image: url(../images/notaquemada.jpg);
+    background-size: 520px;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    font-family: 'Shadows Into Light', cursive;
+}
+#pista{
+    padding-top: 30%;
+    font-size: xx-large;
+}
+#pistaQuemada{
+    padding-top: 80px;
+    padding-left: 325px;
+    font-size: 3em;
+}
+form button{
+    height: 50px;
+    width: 70px;
+    border-radius: 0%;
+    border: solid rgba(128, 128, 128, 0);
+}
+
+button{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid rgba(128, 128, 128, 0);
+}
+#inputTexto{
+    height: 150px;
+    width: 200px;
+    background-color: rgb(49, 48, 48);
+    margin-left: 2%;
+    color: rgb(3, 184, 12);
+    font-size: x-large;
+}
+#teclado{
+    margin-left: 15%;
+    border: solid rgb(148, 148, 148);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 75px;
+    width: 300px;
+    background-color: rgb(219, 219, 219);
+}
+#p4, #p1, #p2, #p3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 20%;
+    font-size: 3em;
+    font-family: 'Shadows Into Light', cursive;
+}  
+#p9, #p5, #p6, #p7, #p8{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 9em;
+    padding-top: 20%;
+}
+#p5{
+    color: red;
+}
+#p6{
+    color: purple;
+}
+#p7{
+    color: green;
+}
+#p8{
+    color: yellow;
+}
+#p9{
+    color: blue;
+}
+#p10, #p11, #p12, #p13, #p14{
+    font-size: xx-large;
+    font-size: 2em;
+    font-family: 'Shadows Into Light', cursive;
+}
+#p10 img{
+    padding-top: 35%;
+    width: 25px;
+}
+#p11 img, #p12 img, #p13 img, #p14 img{
+    padding-top: 32%;
+    width: 50px;
+    font-size: xx-large;
+}
+
+#nota15{
+    background-image: url(../images/pared4difusa.png);
+    background-size: 1600px;
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 900px;
+    margin: auto;
+    text-align: center;
+}
+#p15{
+    margin-top: 414px;
+    margin-left: 835px;
+    width: 20px;
+    height: 20px;
+    background-color: rgba(241, 186, 124, 0.322);
+}
+#p15:hover{
+    filter: brightness(300%);
+}
+
+#entrar{
+    position: absolute;
+    top: 600px;
+    left: 900px;
+    border-radius: 0px;
+    color: aliceblue;
+    background-color: rgb(136, 0, 0);
+    width: 90px;
+}
